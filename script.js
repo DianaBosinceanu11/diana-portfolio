@@ -1,6 +1,6 @@
 // script.js
 const typingEl = document.querySelector('.typing');
-const roles = ['Frontend Developer', 'UI/UX Designer', 'Creative Thinker'];
+const roles = ['Full Stack Developer', 'UI/UX Designer', 'Business Analyst','Tester', 'Creative Thinker'];
 let index = 0;
 let charIndex = 0;
 let currentText = '';

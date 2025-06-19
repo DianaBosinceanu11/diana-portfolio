@@ -109,6 +109,11 @@ nav, nav a {
   margin-left: 50px; /* move the introduction text more to the right */
 }
 
+.hero-text p {
+  margin-bottom: 25px; /* ⬅️ Adds space below the paragraph */
+  line-height: 1.6;
+}
+
 .hero-text h1 {
   font-size: 3rem;
 }
@@ -126,17 +131,34 @@ nav, nav a {
   cursor: pointer;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 20px;
 }
 
 .btn {
   background: #00ffff;
-  color: #0d0d0d;
+  color: #0d0d0d !important; /* ⬅️ MAKE SURE it's dark enough to contrast */
   box-shadow: 0 0 15px #00ffff;
+  font-weight: bold;
+  display: inline-block; /* 🔧 enables transform */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 🔧 smooth hover */
+}
+
+.btn:hover,
+.btn-outline:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px #00ffff;
 }
 
 .btn-outline {
   background: transparent;
   color: #00ffff;
+  border-radius: 20px;
+  display: inline-block; /* 🔧 Allows transform effects */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.socials {
+  margin-bottom: 25px; /* ⬅️ Adds space below icons so buttons don’t collide */
 }
 
 .socials a {
@@ -327,10 +349,10 @@ html {
 
 .skill-item {
   background-color: #0d0d0d;
-  border: 2px solid #2f6262;
+  border: 2px solid #00ffff;
   border-radius: 15px;
   padding: 20px;
-  /* box-shadow: 0 0 20px #00ffff; */
+  box-shadow: 0 0 20px #00ffff;
   transition: 0.3s ease;
 }
 
@@ -553,7 +575,7 @@ html {
 }
 
 .contact-form button:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
   box-shadow: 0 0 30px #00ffff;
 }
 
