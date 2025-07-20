@@ -8,10 +8,16 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("27echiuGWeNNoGjtr");
+  })();
+</script>
+
+
 <body>
-
-
-
   <!-- Navbar -->
 <header class="navbar">
   <div class="logo">Diana <span>Bosînceanu</span></div>
@@ -269,16 +275,24 @@ I'm always learning, growing, and eager to bring energy and creativity to real-w
   <!-- CONTACT ME SECTION -->
   <section id="contact" class="contact-section">
     <h2 class="section-title">Contact <span class="neon">Me</span></h2>
-    <form class="contact-form">
+    <form id="contact-form" class="contact-form">
       <div class="input-row">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
       </div>
-      <input type="text" placeholder="Subject" required>
-      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <input type="text" name="title" placeholder="Subject" required />
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
       <button type="submit" class="btn neon">Send Message</button>
     </form>
+    <div id="success-popup" class="popup">
+      <div class="popup-content">
+        <p>Message sent! You’ll get a reply soon 😊</p>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
+
   </section>
+
 
 
   <!-- FOOTER -->

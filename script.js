@@ -75,3 +75,35 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Show and hide popup functions
+function showPopup() {
+  document.getElementById("success-popup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("success-popup").style.display = "none";
+}
+
+// Main form submission logic
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Send message to yourself (you get notified)
+  emailjs.sendForm("gmail_service", "template_p6cvw3f", this)
+    .then(() => {
+      console.log("Message sent to me!");
+    })
+    .catch((error) => {
+      console.error("Failed to send to me:", error);
+    });
+
+  // Send confirmation to the user
+  emailjs.sendForm("gmail_service", "template_43hcnkz", this)
+    .then(() => {
+      showPopup();
+      this.reset();
+    })
+    .catch((error) => {
+      console.error("Failed to send auto-reply:", error);
+    });
+});
