@@ -390,6 +390,16 @@ html {
   }
 }
 
+h3 i {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  stroke: #00ffff; /* sau orice culoare neon */
+  vertical-align: middle;
+}
+
+
+
 .projects-section h2.section-title {
   margin-bottom: 45px;
 }
@@ -408,8 +418,18 @@ html {
   max-width: 1050px;
   margin-left: auto;
   margin-right: auto;
+  transition: opacity 0.8s ease;
 }
 
+.projects-grid {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.projects-grid.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 
 .project-card {
@@ -680,4 +700,30 @@ html {
 
 .footer-socials a:hover {
   text-shadow: 0 0 10px #00ffff;
+}
+
+
+
+/* PROJECT SECTION TABS */
+.project-tabs {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.tab-btn {
+  background-color: transparent;
+  color: #0ff;
+  border: 2px solid #0ff;
+  padding: 8px 20px;
+  margin: 0 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background-color: #0ff;
+  color: #000;
 }

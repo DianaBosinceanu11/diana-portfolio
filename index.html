@@ -10,8 +10,8 @@
 </head>
 <body>
 
-  <!-- Navbar -->
 
+  <!-- Navbar -->
 <header class="navbar">
   <div class="logo">Diana <span>Bosinceanu</span></div>
   <nav class="nav-links">
@@ -25,21 +25,23 @@
 </header>
 
 
-
-
   <!-- Hero Section -->
   <section id="home" class="hero">
     <div class="hero-text">
       <h1>Hi, It's <span class="neon">Diana</span></h1>
       <h2>I'm a <span class="typing"></span></h2>
       <p>I recently graduated from Solent University with a degree in Computing.  
-Currently, I'm gaining industry experience as an IT Recruiter, Business Analyst, and Software Tester, a role that gives me a unique perspective across tech teams.   
-Outside of work, I’m passionate about building beautiful and interactive web experiences. I focus mainly on frontend development with React, but I also enjoy writing Python for fun and utility.  
-I'm always learning, growing, and excited to contribute to meaningful projects.</p>
+      Currently, I'm gaining industry experience as an IT Recruiter, Business Analyst, and Software Tester, a role that gives me a unique perspective across tech teams.   
+      Outside of work, I’m passionate about building beautiful and interactive web experiences. I focus mainly on frontend development with React, but I also enjoy writing Python for fun and utility.  
+      I'm always learning, growing, and excited to contribute to meaningful projects.</p>
       <div class="socials">
         <a href="https://www.linkedin.com/in/diana-bosinceanu-756236223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV8R%2Ft3%2BFTbakAr7tNjV1rg%3D%3D"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/DianaBosinceanu11"><i class="fab fa-github"></i></a>
         <a href="https://www.instagram.com/annedianne11/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@dianabosinceanu6647" target="_blank"><i class="fab fa-youtube"></i></a>
+
+
+
 
       </div>
       <div class="buttons">
@@ -52,217 +54,238 @@ I'm always learning, growing, and excited to contribute to meaningful projects.<
     </div>
   </section>
 
+
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+
+          <!-- Computing Degree -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2022 – 2025 </h3>
+          <h4>Solent University - London Campus, UK</h4>
+          <p>BSc (Hons) Computing — focused on full-stack development, with hands-on practice in React, JavaScript, Python, Java, SQL, Firebase, MongoDB, Data Science, Node.js, HTML, JavaScript, CSS and networking fundamentals (Cisco training).</p>
+        </div>
+      </div>
+
+      <!-- Law Degree -->
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>2014 – 2018</h3>
+          <h4>Ovidius University — Constanța, Romania</h4>
+          <p>Bachelor of Laws (LLB) — trained in legal reasoning, research, and logic. This structured thinking now enhances my approach to software problem solving.</p>
+        </div>
+      </div>
+
+      
+      <!-- High School -->
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>2010 – 2014</h3>
+          <h4>"Ioan Cotovu" High School — Hârșova, Romania</h4>
+          <p>Social Sciences profile — developed strong communication and analytical skills, laying the foundation for later academic and career transitions.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-item"><i class="fab fa-js"></i><p>JavaScript</p></div>
+      <div class="skill-item"><i class="fab fa-react"></i><p>React</p></div>
+      <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
+      <div class="skill-item"><i class="fa-solid fa-fire-flame-curved"></i><p>Firebase</p></div>
+      <div class="skill-item"><i class="fas fa-database"></i><p>SQL</p></div>
+      <div class="skill-item"><i class="fas fa-user-check"></i><p>UI/UX</p></div>
+      <div class="skill-item"><i class="fab fa-figma"></i><p>Figma</p></div>
+      <div class="skill-item"><i class="fas fa-paint-brush"></i><p>Canva</p></div>
+      <div class="skill-item"><i class="fab fa-node-js"></i><p>Node.js</p></div>
+      <div class="skill-item"><i class="fas fa-leaf"></i><p>MongoDB</p></div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-title">Projects</h2>
+      <div class="project-tabs">
+        <button class="tab-btn active" data-tab="web">📁 Web Projects</button>
+        <button class="tab-btn" data-tab="figma">🎨 Figma UI Design</button>
+      </div>
+
+    <div class="projects-grid" id="web-projects">
+
+      <div class="project-card">
+      <img src="assets/images/HireSpark.png" alt="HireSpark CRM Screenshot">
+      <h3>🚀 HireSpark – Smart Recruitment CRM</h3>
+      <p>
+      ➤ A full-stack recruitment tool to automate hiring. Upload CVs, extract data using <strong>AI</strong>, and manage candidates with <strong>GDPR</strong> compliance.
+      Built with <strong>React</strong> (frontend) and <strong>FastAPI</strong> (backend).  
+      Includes <em>smart summaries</em>, <em>SendGrid emails</em>, and optional <em>Gmail API</em> support.
+      The <strong>“Run Smart Match”</strong> feature scans the candidate database using <em>vector embeddings</em> to suggest the most relevant profiles for a given job description.
+      </p>
+      <p><strong>➤ Tech Used:</strong> React, Python, FastAPI, Node.js, Cohere API, Groq API, SendGrid, Gmail API, Vite, CSS </p>
+      <p><em>🔗 Personal MSc Dissertation project for Solent University</em></p>
+      <div class="project-links">
+          <a href="https://youtu.be/GnueBTo41uw?si=HWp_RH-ZfBNr_jiZ" target="_blank">Live</a>
+          <a href="https://github.com/yourusername/portfolio" target="_blank">Code</a>
+      </div>
+      </div>
+
+
+      <div class="project-card">
+      <img src="assets/images/aibedtimestory.png" alt="AI Bedtime Story Screenshot">
+      <h3>🧸 AI Bedtime Story</h3>
+      <p>
+          ➤ A personalized story generator built with <strong>Next.js</strong>, <strong>Firebase</strong>, and <strong>React</strong>. Parents and children can log in with unique roles to create and enjoy customized bedtime stories. 
+          The app uses user context to dynamically display avatars, manage authentication, and store favorites. It’s clean, responsive, and designed based on real client requirements.
+      </p>
+      <p><strong>➤ Tech Used:</strong> Next.js, React, Firebase Auth & Firestore, CSS Modules, Vercel, Responsive UI</p>
+      <p><em>🔗 Group dissertation project developed in collaboration with team members during our final university year.</em></p>
+      <div class="project-links">
+          <a href="https://ai-bedtime-story.vercel.app/" target="_blank">Live</a>
+          <a href="https://github.com/yourusername/ai-bedtime-story" target="_blank">Code</a>
+      </div>
+      </div>
+
+
+      <div class="project-card">
+        <img src="assets/images/nailwebsite.png" alt="Beauty Salon">
+        <h3>💅 Beauty Salon Booking & Management Platform</h3>
+        <p>➤ A full-stack booking and management web app for a beauty salon. It allows customers to create accounts, book appointments based on real-time availability, and manage or cancel their bookings. The platform also includes a manager dashboard where staff can view all bookings, adjust working hours, set closed periods, and see available time slots. The system ensures no overlapping appointments and eliminates the need for manual scheduling tools.</p>
+        <p><strong>➤ Tech Used:</strong> React · Tailwind CSS · Python (FastAPI), Responsive UI</p>
+        <p><em>🔗 A real-world salon management web application, designed to simplify appointment scheduling and streamline daily operations.</em></p>
+        <div class="project-links">
+          <a href="#">Live: Coming Soon</a>
+          <a href="https://github.com/DianaBosinceanu11/nails_studio.git">Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/images/project1.jpg" alt="Project 4">
+        <h3>Places To Stay</h3>
+        <p>This website you're seeing! Built with HTML, CSS, and JavaScript.</p>
+        <div class="project-links">
+          <a href="https://your-live-link.com" target="_blank">Live</a>
+          <a href="https://github.com/yourusername/portfolio" target="_blank">Code</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-grid" id="figma-projects" style="display: none;">
+    <!-- ANGELOPTIC OPTICIAN -->
+    <div class="project-card">
+      <img src="assets/images/figma_AngelOptic2.png" alt="Figma Design Screenshot">
+      <h3>👓 AngelOptic - Optician</h3>
+
+      <p>➤ A fully customized UI/UX and branding project developed for a real client – a local optometry clinic. I was responsible for the entire creative process, from research to execution:</p>
+      <p><strong>• Brand Identity:</strong> Developed a cohesive and calming brand image using a custom-selected color scheme, fonts, and moodboard to reflect trust, clarity, and modernity.</p>
+      <p><strong>• Logo Recreation:</strong> Rebuilt and enhanced the client's existing logo using Canva and Figma, ensuring high-quality scalability across the website and print.</p>
+      <p><strong>• UI/UX Design:</strong> Designed a clean, accessible website layout tailored for optometry services, with a booking page featuring a large interactive calendar.</p>
+      <p><strong>• Image Editing:</strong> Curated and enhanced high-quality visual elements using, to match the visual theme and branding.</p>
+      <p><em>🔗 This project demonstrates my ability to translate a business’s real-world identity into a professional online presence, covering both design and strategic content aspects.</em></p>
+      <div class="project-links">
+        <a href="https://www.figma.com/proto/gKzKSYIgneG5IE0isjHn39/Untitled?node-id=2-2&t=Y47QmOfD6EDFdGEj-8&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&hide-ui=1" target="_blank">View Figma</a>
+      </div>
+    </div>
+
+
+
+    <!-- DESIBEACH GRILL REASTAURANT -->
+    <div class="project-card">
+      <img src="assets/images/figma_desibeachgrill.png" alt="Figma Design Screenshot">
+    <h3>🍲 DesiBeachGrill - Restaurant</h3>
+
+    <p>➤ A vibrant, user-friendly restaurant website created entirely in Figma, tailored for a South Asian beach grill theme.</p>
+    <p><strong>• Brand Identity:</strong> Designed a warm and appetizing color palette, hand-picked fonts, and visual elements reflecting a tropical and inviting atmosphere.</p>
+    <p><strong>• Logo Recreation:</strong> Built a clean vector-based logo, aligned with the restaurant’s visual direction and social media use.</p>
+    <p><strong>• UI/UX Design:</strong> Focused on intuitive food ordering flow and engaging hero sections with call-to-actions.</p>
+    <p><strong>• Image Editing:</strong> Used client's and stock assets, custom color grading to highlight menu items in a fresh, vibrant way.</p>
+    <p><em>🔗 This project demonstrates my ability to blend appealing design with restaurant-specific business needs.</em></p>
+
+      <div class="project-links">
+        <a href="https://www.figma.com/proto/kPnqxMoQdTRQPctF0KKzna/Desi-Beach-Grill--final-?node-id=2-2&p=f&t=f1sMGvm2aUOIOCTG-8&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&hide-ui=1" target="_blank">View Figma</a>
+      </div>
+    </div>
+
+
+  </div>
+
+  </section>
+
+
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section id="certifications" class="certifications-section">
+    <h2 class="section-title">Certifications</h2>
+    <div class="certs-grid">
+
+      <div class="cert-card">
+      <a href="https://www.credly.com/badges/d1ff4a53-53c3-4b21-814b-fca1fed6e80b/public_url" target="_blank">
+      <img src="assets/images/cisco-badge.png" alt="Cisco CCNA Badge" class="cert-badge">
+      </a>
+      <h3>CCNA: Introduction to Networks</h3>
+      <p>Issued by Cisco — completed hands-on labs, networking, IP addressing, and switching fundamentals.</p>
+      <a href="assets/certificates/cisco-ccna.pdf" target="_blank" class="cert-btn">View Certificate</a>
+      </div>
+
+
+      <div class="cert-card">
+        <h3>Coursera Web Development</h3>
+        <p>In progress: HTML, CSS, JavaScript track.</p>
+      </div>
+
+      <div class="cert-card">
+        <h3>Figma Essentials</h3>
+        <p>Self-paced design practice and UI challenges.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT ME SECTION -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Contact <span class="neon">Me</span></h2>
+    <form class="contact-form">
+      <div class="input-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
+      <input type="text" placeholder="Subject" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn neon">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>© 2025 Diana Bosinceanu. Made with 💙, HTML, CSS & JS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/DianaBosinceanu11" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/diana-bosinceanu-756236223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrrT6GGkwSKi4xqNbs9qTzA%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:dianabosinceanu11@hmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- Education Section -->
-<!-- Education Section -->
-<section id="education" class="education-section">
-  <h2 class="section-title">Education</h2>
-  <div class="timeline">
-
-        <!-- Computing Degree -->
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <h3>2022 – 2025 </h3>
-        <h4>Solent University - London Campus, UK</h4>
-        <p>BSc (Hons) Computing — focused on full-stack development, with hands-on practice in React, JavaScript, Python, Java, SQL, Firebase, MongoDB, Data Science, Node.js, HTML, JavaScript, CSS and networking fundamentals (Cisco training).</p>
-      </div>
-    </div>
-
-    <!-- Law Degree -->
-    <div class="timeline-item right">
-      <div class="timeline-content">
-        <h3>2014 – 2018</h3>
-        <h4>Ovidius University — Constanța, Romania</h4>
-        <p>Bachelor of Laws (LLB) — trained in legal reasoning, research, and logic. This structured thinking now enhances my approach to software problem solving.</p>
-      </div>
-    </div>
-
-    
-    <!-- High School -->
-    <div class="timeline-item left">
-      <div class="timeline-content">
-        <h3>2010 – 2014</h3>
-        <h4>"Ioan Cotovu" High School — Hârșova, Romania</h4>
-        <p>Social Sciences profile — developed strong communication and analytical skills, laying the foundation for later academic and career transitions.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <h2 class="section-title">Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-item"><i class="fab fa-html5"></i><p>HTML</p></div>
-    <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
-    <div class="skill-item"><i class="fab fa-js"></i><p>JavaScript</p></div>
-    <div class="skill-item"><i class="fab fa-react"></i><p>React</p></div>
-    <div class="skill-item"><i class="fab fa-node-js"></i><p>Node.js</p></div>
-    <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
-    <div class="skill-item"><i class="fab fa-java"></i><p>Java</p></div>
-    <div class="skill-item"><i class="fa-solid fa-fire-flame-curved"></i><p>Firebase</p></div>
-    <div class="skill-item"><i class="fas fa-database"></i><p>SQL</p></div>
-    <div class="skill-item"><i class="fas fa-leaf"></i><p>MongoDB</p></div>
-    <div class="skill-item"><i class="fab fa-figma"></i><p>Figma</p></div>
-    <div class="skill-item"><i class="fas fa-paint-brush"></i><p>Canva</p></div>
-
-  </div>
-</section>
-
-
-
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects-grid">
-
-    <div class="project-card">
-    <img src="assets/images/HireSpark.png" alt="HireSpark CRM Screenshot">
-    <h3>🚀 HireSpark – Smart Recruitment CRM</h3>
-    <p>
-    ➤ A full-stack recruitment tool to automate hiring. Upload CVs, extract data using <strong>AI</strong>, and manage candidates with <strong>GDPR</strong> compliance.
-    Built with <strong>React</strong> (frontend) and <strong>FastAPI</strong> (backend).  
-    Includes <em>smart summaries</em>, <em>SendGrid emails</em>, and optional <em>Gmail API</em> support.
-    The <strong>“Run Smart Match”</strong> feature scans the candidate database using <em>vector embeddings</em> to suggest the most relevant profiles for a given job description.
-    </p>
-    <p><strong>➤ Tech Used:</strong> React, Python, FastAPI, Node.js, Cohere API, Groq API, SendGrid, Gmail API, Vite, CSS </p>
-    <p><em>🔗 Personal MSc Dissertation project for Solent University</em></p>
-    <div class="project-links">
-        <a href="https://youtu.be/GnueBTo41uw?si=HWp_RH-ZfBNr_jiZ" target="_blank">Live</a>
-        <a href="https://github.com/yourusername/portfolio" target="_blank">Code</a>
-    </div>
-    </div>
-
-
-    <div class="project-card">
-    <img src="assets/images/aibedtimestory.png" alt="AI Bedtime Story Screenshot">
-    <h3>🧸 AI Bedtime Story</h3>
-    <p>
-        ➤ A personalized story generator built with <strong>Next.js</strong>, <strong>Firebase</strong>, and <strong>React</strong>. Parents and children can log in with unique roles to create and enjoy customized bedtime stories. 
-        The app uses user context to dynamically display avatars, manage authentication, and store favorites. It’s clean, responsive, and designed based on real client requirements.
-    </p>
-    <p><strong>➤ Tech Used:</strong> Next.js, React, Firebase Auth & Firestore, CSS Modules, Vercel, Responsive UI</p>
-    <p><em>🔗 Group dissertation project developed in collaboration with team members during our final university year.</em></p>
-    <div class="project-links">
-        <a href="https://ai-bedtime-story.vercel.app/" target="_blank">Live</a>
-        <a href="https://github.com/yourusername/ai-bedtime-story" target="_blank">Code</a>
-    </div>
-    </div>
-
-
-    <div class="project-card">
-      <img src="assets/images/project2.jpg" alt="Project 3">
-      <h3>Meetup Events App</h3>
-      <p>Simple JavaScript task manager with local storage.</p>
-      <div class="project-links">
-        <a href="#">Live</a>
-        <a href="#">Code</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/project1.jpg" alt="Project 4">
-      <h3>Places To Stay</h3>
-      <p>This website you're seeing! Built with HTML, CSS, and JavaScript.</p>
-      <div class="project-links">
-        <a href="https://your-live-link.com" target="_blank">Live</a>
-        <a href="https://github.com/yourusername/portfolio" target="_blank">Code</a>
-      </div>
-    </div>
-
-
-
-        <div class="project-card">
-      <img src="assets/images/project1.jpg" alt="Project 1">
-      <h3>Personal Portfolio</h3>
-      <p>This website you're seeing! Built with HTML, CSS, and JavaScript.</p>
-      <div class="project-links">
-        <a href="https://your-live-link.com" target="_blank">Live</a>
-        <a href="https://github.com/yourusername/portfolio" target="_blank">Code</a>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="assets/images/project2.jpg" alt="Project 2">
-      <h3>Todo App</h3>
-      <p>Simple JavaScript task manager with local storage.</p>
-      <div class="project-links">
-        <a href="#">Live</a>
-        <a href="#">Code</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-
-<!-- CERTIFICATIONS SECTION -->
-
-<section id="certifications" class="certifications-section">
-  <h2 class="section-title">Certifications</h2>
-  <div class="certs-grid">
-
-    <div class="cert-card">
-    <a href="https://www.credly.com/badges/d1ff4a53-53c3-4b21-814b-fca1fed6e80b/public_url" target="_blank">
-    <img src="assets/images/cisco-badge.png" alt="Cisco CCNA Badge" class="cert-badge">
-    </a>
-    <h3>CCNA: Introduction to Networks</h3>
-    <p>Issued by Cisco — completed hands-on labs, networking, IP addressing, and switching fundamentals.</p>
-    <a href="assets/certificates/cisco-ccna.pdf" target="_blank" class="cert-btn">View Certificate</a>
-    </div>
-
-
-    <div class="cert-card">
-      <h3>Coursera Web Development</h3>
-      <p>In progress: HTML, CSS, JavaScript track.</p>
-    </div>
-
-    <div class="cert-card">
-      <h3>Figma Essentials</h3>
-      <p>Self-paced design practice and UI challenges.</p>
-    </div>
-
-
-  </div>
-</section>
-
-
-<!-- CONTACT ME SECTION -->
-<section id="contact" class="contact-section">
-  <h2 class="section-title">Contact <span class="neon">Me</span></h2>
-  <form class="contact-form">
-    <div class="input-row">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-    </div>
-    <input type="text" placeholder="Subject" required>
-    <textarea rows="6" placeholder="Your Message" required></textarea>
-    <button type="submit" class="btn neon">Send Message</button>
-  </form>
-</section>
-
-
-<!-- FOOTER -->
-
-<footer class="site-footer">
-  <div class="footer-content">
-    <p>© 2025 Diana Bosinceanu. Made with 💙, HTML, CSS & JS.</p>
-    <div class="footer-socials">
-      <a href="https://github.com/DianaBosinceanu11" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/diana-bosinceanu-756236223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrrT6GGkwSKi4xqNbs9qTzA%3D%3D" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:dianabosinceanu11@hmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
-  </div>
-</footer>
