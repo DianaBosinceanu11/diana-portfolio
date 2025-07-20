@@ -29,6 +29,18 @@ function typeEffect() {
 
 typeEffect();
 
+function toggleMenu() {
+  const menu = document.getElementById('navMenu');
+  menu.classList.toggle('active');
+}
+
+// Close menu when a nav link is clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navMenu').classList.remove('active');
+  });
+});
+
 
 // Project Tab Toggle Functionality
 document.addEventListener('DOMContentLoaded', function () {

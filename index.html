@@ -11,10 +11,18 @@
 <body>
 
 
+
   <!-- Navbar -->
 <header class="navbar">
-  <div class="logo">Diana <span>Bosinceanu</span></div>
-  <nav class="nav-links">
+  <div class="logo">Diana <span>Bosînceanu</span></div>
+
+  <!-- Hamburger Menu Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</div>
+
+
+  <nav class="nav-links" id="navMenu">
     <a href="#home" class="active">Home</a>
     <a href="#education">Education</a>
     <a href="#skills">Skills</a>
@@ -30,10 +38,11 @@
     <div class="hero-text">
       <h1>Hi, It's <span class="neon">Diana</span></h1>
       <h2>I'm a <span class="typing"></span></h2>
-      <p>I recently graduated from Solent University with a degree in Computing.  
-      Currently, I'm gaining industry experience as an IT Recruiter, Business Analyst, and Software Tester, a role that gives me a unique perspective across tech teams.   
-      Outside of work, I’m passionate about building beautiful and interactive web experiences. I focus mainly on frontend development with React, but I also enjoy writing Python for fun and utility.  
-      I'm always learning, growing, and excited to contribute to meaningful projects.</p>
+      <p>I recently graduated from Solent University with a degree in Computing. Currently, I’m gaining valuable industry experience as an IT Recruiter, Business Analyst, and Software Tester, a role that gives me a unique perspective on how cross-functional tech teams operate.
+
+Outside of work, I’m passionate about building beautiful and meaningful web experiences. I focus mainly on frontend development with React, and I enjoy using Python for creative and practical projects.
+
+I'm always learning, growing, and eager to bring energy and creativity to real-world challenges, both individually and as part of a team.</p>
       <div class="socials">
         <a href="https://www.linkedin.com/in/diana-bosinceanu-756236223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BV8R%2Ft3%2BFTbakAr7tNjV1rg%3D%3D"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://github.com/DianaBosinceanu11"><i class="fab fa-github"></i></a>
@@ -129,7 +138,7 @@
     <div class="projects-grid" id="web-projects">
 
       <div class="project-card">
-      <img src="assets/images/HireSpark.png" alt="HireSpark CRM Screenshot">
+      <img src="assets/images/HireSpark.png" alt="HireSpark CRM Screenshot " loading="lazy">
       <h3>🚀 HireSpark – Smart Recruitment CRM</h3>
       <p>
       ➤ A full-stack recruitment tool to automate hiring. Upload CVs, extract data using <strong>AI</strong>, and manage candidates with <strong>GDPR</strong> compliance.
@@ -147,7 +156,7 @@
 
 
       <div class="project-card">
-      <img src="assets/images/aibedtimestory.png" alt="AI Bedtime Story Screenshot">
+      <img src="assets/images/aibedtimestory.png" alt="AI Bedtime Story Screenshot" loading="lazy">
       <h3>🧸 AI Bedtime Story</h3>
       <p>
           ➤ A personalized story generator built with <strong>Next.js</strong>, <strong>Firebase</strong>, and <strong>React</strong>. Parents and children can log in with unique roles to create and enjoy customized bedtime stories. 
@@ -163,7 +172,7 @@
 
 
       <div class="project-card">
-        <img src="assets/images/nailwebsite.png" alt="Beauty Salon">
+        <img src="assets/images/nailwebsite.png" alt="Beauty Salon" loading="lazy">
         <h3>💅 Beauty Salon Booking & Management Platform</h3>
         <p>➤ A full-stack booking and management web app for a beauty salon. It allows customers to create accounts, book appointments based on real-time availability, and manage or cancel their bookings. The platform also includes a manager dashboard where staff can view all bookings, adjust working hours, set closed periods, and see available time slots. The system ensures no overlapping appointments and eliminates the need for manual scheduling tools.</p>
         <p><strong>➤ Tech Used:</strong> React · Tailwind CSS · Python (FastAPI), Responsive UI</p>
@@ -189,7 +198,7 @@
     <div class="projects-grid" id="figma-projects" style="display: none;">
     <!-- ANGELOPTIC OPTICIAN -->
     <div class="project-card">
-      <img src="assets/images/figma_AngelOptic2.png" alt="Figma Design Screenshot">
+      <img src="assets/images/figma_AngelOptic2.png" alt="Figma Design Screenshot" loading="lazy">
       <h3>👓 AngelOptic - Optician</h3>
 
       <p>➤ A fully customized UI/UX and branding project developed for a real client – a local optometry clinic. I was responsible for the entire creative process, from research to execution:</p>
@@ -207,7 +216,7 @@
 
     <!-- DESIBEACH GRILL REASTAURANT -->
     <div class="project-card">
-      <img src="assets/images/figma_desibeachgrill.png" alt="Figma Design Screenshot">
+      <img src="assets/images/figma_desibeachgrill.png" alt="Figma Design Screenshot" loading="lazy">
     <h3>🍲 DesiBeachGrill - Restaurant</h3>
 
     <p>➤ A vibrant, user-friendly restaurant website created entirely in Figma, tailored for a South Asian beach grill theme.</p>
@@ -287,5 +296,12 @@
 
   <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.classList.toggle('active');
+    }
+  </script>
+
 </body>
 </html>

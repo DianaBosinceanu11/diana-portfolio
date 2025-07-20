@@ -1,4 +1,11 @@
 /* style.css */
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -122,6 +129,10 @@ nav, nav a {
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
 }
+
+
+
+
 
 .buttons .btn,
 .buttons .btn-outline {
@@ -384,11 +395,7 @@ html {
 
 
 /* *** PROJECTS SECTION *** */
-@media (max-width: 768px) {
-  .projects-grid {
-    grid-template-columns: 1fr; /* One per row on mobile */
-  }
-}
+
 
 h3 i {
   width: 20px;
@@ -397,8 +404,6 @@ h3 i {
   stroke: #00ffff; /* sau orice culoare neon */
   vertical-align: middle;
 }
-
-
 
 .projects-section h2.section-title {
   margin-bottom: 45px;
@@ -410,9 +415,10 @@ h3 i {
   text-align: center;
 }
 
+/* Default desktop */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Force 2 per row */
+  grid-template-columns: repeat(2, 1fr); /* desktop default */
   gap: 40px;
   margin-top: 10px; /* 🔻 reduce this value */
   max-width: 1050px;
@@ -537,9 +543,12 @@ h3 i {
 
 /* BADGE */
 .cert-badge {
-  width: 200px;
-  margin-bottom: 15px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px; /* keep this if you want spacing */
 }
+
 
 .cert-btn {
   display: inline-block;
@@ -564,15 +573,6 @@ h3 i {
   transition: 0.4s ease;
   /* box-shadow: 0 0 15px #00ffff; */
 }
-
-
-
-/* PROJECTS IMG
-.projectsimg {
-  width: 100px;
-  margin-bottom: 15px;
-}
- */
 
 
 
@@ -661,11 +661,6 @@ h3 i {
   box-shadow: 0 0 30px #00ffff;
 }
 
-@media (max-width: 600px) {
-  .input-row {
-    flex-direction: column;
-  }
-}
 
 
 
@@ -726,4 +721,92 @@ h3 i {
 .tab-btn.active {
   background-color: #0ff;
   color: #000;
+}
+
+
+
+/* RESPONSIVENESS Tablet and mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: auto;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    padding-top: 100px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .hero-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .input-row {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .buttons .btn,
+  .buttons .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* RESPONSIVE NAV BAR */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #00ffff;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #0d0d0d;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid #00ffff;
+    box-shadow: 0 5px 15px rgba(0, 255, 255, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
